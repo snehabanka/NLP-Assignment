@@ -21,6 +21,7 @@ Multiple methods are deployed for empathy analysis, each serving a unique purpos
 3. *Logistic Regression and Random Forest Classifiers*:
    - Traditional machine learning models used to classify the level of empathy based on features extracted from text.
    - Beneficial for comparative analysis and understanding feature importance.
+   - We are manually creating labeled data by using a function that is designed to assess the empathetic nature of an            engineer's response by analyzing the sentiment of the given text. The sentiment score, ranging from -1 (negative) to 1       (positive), is transformed into  an empathy label on a scale from 0 to 10, where 0 represents the least empathetic and       10 the most empathetic, for utilizing in this model.
 
 4. *Cosine Similarity for Text Relevance*:
    - Measures how closely an engineer's response is related to the customer's query.
@@ -38,7 +39,7 @@ Execute the Jupyter Notebook to perform grammar checking and empathy analysis. T
 The project uses a dataset of paired customer queries and engineer responses. Each interaction is analyzed for both grammar and empathy.
 
 ## Results
-(Provide a summary of the findings, highlighting the effectiveness of different empathy analysis methods and the results of the grammar check.)
+
 
 ## Contributing
 Contributions to further enhance the analysis are welcome. Follow standard GitHub procedures to fork, clone, and pull request.
