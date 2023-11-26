@@ -40,6 +40,20 @@ The project uses a dataset of paired customer queries and engineer responses. Ea
 
 ## Results
 
+**Using an RNN (Recurrent Neural Network) or a transformer model for empathy detection in customer service interactions can indeed be a powerful approach, especially if you have enough data to support the training process
+
+**Transformer models are resource-intensive and require significant computational power for training. They also perform best when fine-tuned on large datasets.
+
+**Empathy Scoring Using TextBlob are determined based on sentiment polarity so indicative of only wheter a response is positive or negative.
+
+**Text Similarity Analysis computes the cosine similarity between customer queries and engineer responses to assess the relevance of responses to the queries hence not relevant for empathy scoring.
+
+**Training and Testing Machine Learning Models includes code for training and evaluating machine learning models (Logistic Regression, Random Forest) on the empathy scoring task.
+Hyperparameter Tuning for Random Forest Model conducts grid search hyperparameter tuning for the Random Forest classifier to optimize its performance for the empathy prediction task which is most relevant for this small dataset.This can serve as a baseline and provide immediate insights.
+
+Hence we choose Random Forest Model for final results.
+Result set having ticket id as column for reference and its respective SCORE, STATUS and COMMENT for each parameter GRAMMER and EMPATHY. Result set also saved as csv in directory.
+
 
 ## Contributing
 Contributions to further enhance the analysis are welcome. Follow standard GitHub procedures to fork, clone, and pull request.
